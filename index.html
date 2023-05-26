@@ -147,7 +147,7 @@
 
 
           <div class="card">
-            <img src="./images/Portfolio.jpg" class="card-img-top" alt="imagen de tarjeta">
+            <img src="./images/home.png" class="card-img-top" alt="imagen de tarjeta">
             <div class="description-card">
               <h1>Mi portfolio</h1>
               <p class="card-text">
@@ -268,7 +268,7 @@
 
 
 
-<h2 class="title" #skills>Aprendiendo...</h2>
+<h2 class="title" #skills>APRENDIENDO</h2>
       
       <div class="box-hard-aprendiendo ">
   
@@ -294,26 +294,20 @@
   </section>
 
   <!--  CONTACTO agregar placeholder, eliminar label y p -->
-<section id="contact">
-  
-  <h2 class="title" id="contact">CONTACTO</h2>
-  <div class="formulario" >
-  
-        <form name="contact" method="POST" data-netlify="true">
-          
-           <input type="text" name="name" placeholder="Escribe tu nombre" />
-        <br>
-           <input type="email" name="email" placeholder="Deja tu mail"/>
-          <br>
-          <textarea name="message" placeholder="Dejame un mensaje"></textarea>
-          <br>
-            <button type="submit">Enviar</button>
-      
-        </form>
-      </div>
+  <section id="contact">
+    <h2 class="title" id="contact">CONTACTO</h2>
+    <div class="formulario">
+      <form name="contact" method="POST" data-netlify="true" action="/gracias-por-contactar">
+        <!-- Contenido del formulario -->
+    
+        <input type="text" name="name" placeholder="Escribe tu nombre" /><br>
+        <input type="email" name="email" placeholder="Deja tu mail" /><br>
+        <textarea name="message" placeholder="Dejame un mensaje"></textarea><br>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
-  </div>
   </section>
+  
 
   <!----- FOOTER-v---->
 

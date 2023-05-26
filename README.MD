@@ -19,7 +19,7 @@ ver los demas proyectos mas pequenos en forma de grilla
 ---eliminar animacion de aprendiendo...
 ---navbar scroll transparent
 
-https://github.com/matiasherreradev/portfolio2023.git
+https://github.com/matiasherreradev/p2023.git
 ghjdgfjdgfjdfjgdsfjdfj
 
 #0D0F12

@@ -95,11 +95,11 @@ p {
 }
 
 .navbar .menu li a:hover {
-  color: #fff59e;
+  color: blueviolet;
 }
 
 .navbar.sticky .menu li a:hover {
-  color: #fff59e;
+  color: blueviolet;
 }
 
 /* menu btn styling */
@@ -184,7 +184,6 @@ p {
   padding: 12px 36px;
   border-radius: 8px;
   margin-top: 20px;
-  border: 2px solid #eb5e28;
   transition: all 0.3s ease;
   font-weight: 600;
 }
@@ -229,7 +228,8 @@ section .title {
   margin-top: 50px;
 }
 #contact {
-  color: #fff;
+  color: #838888;
+  background: #111;
 }
 
 .acerca {
@@ -391,8 +391,7 @@ section .title {
   font-family: "Rubik", sans-serif;
   margin-bottom: 20px;
   padding: 10px;
-  position: relative;
-  overflow: hidden;
+
   outline: none;
   border: none;
   text-decoration: none;
@@ -469,7 +468,7 @@ section .title {
   font-family: "Roboto", sans-serif;
   background-color: #111;
   width: 100%;
-  height: 100vh;
+  height: 68vh;
   background-size: cover;
   background-image: url(./images/plane.jpg);
   /* <a href="https://www.freepik.es/foto-gratis/avion-papel-amarillo_974127.htm#page=2&query=plane%20vector%20mail&position=5&from_view=search&track=ais">Imagen de dashu83</a> en Freepik */
@@ -479,12 +478,7 @@ section .title {
 }
 
 form {
-  background-color: rgba(
-    17,
-    17,
-    17,
-    0.8
-  ); /* Color de fondo con transparencia */
+  background-color: rgba(17, 17, 17, 0.8);
   margin-left: 150px;
   max-width: 33%;
   max-height: 100vh;
@@ -503,6 +497,8 @@ form {
   margin-top: 1.5em;
   display: grid;
   gap: 1.5em;
+  width: 40%;
+  margin: auto;
   background-color: rgba(0, 0, 0, 0.7);
 }
 form input,
@@ -594,15 +590,17 @@ footer span a:hover {
       margin: 10px 0px;
     }
   }
-  form {
-    margin: 140px;
-    max-width: 30%;
-    max-height: 80vh;
-  }
+
   @media (max-width: 1230px) {
     .card {
       margin: 10px 5px;
     }
+  }
+  form {
+    margin: 10px;
+    width: 70%;
+    max-width: 100%;
+    max-height: 80vh;
   }
   @media (max-width: 1104px) {
     .acerca .acerca-content .left img {
@@ -611,8 +609,9 @@ footer span a:hover {
     }
   }
   form {
-    margin: 120px;
-    max-width: 35%;
+    margin: 10px;
+    width: 70%;
+    max-width: 100%;
     max-height: 80vh;
   }
 
@@ -622,8 +621,9 @@ footer span a:hover {
     }
   }
   form {
-    margin: 100px;
-    max-width: 45%;
+    margin: 10px;
+    width: 50%;
+    max-width: 100%;
     max-height: 80vh;
   }
 
@@ -703,11 +703,12 @@ footer span a:hover {
       flex-direction: column;
     }
     form {
-      margin: 90px;
-      max-width: 50%;
+      margin: 10px;
+      width: 70%;
+      max-width: 100%;
       max-height: 80vh;
     }
-  
+
     @media (max-width: 700px) {
       .contact-content {
         padding: 0 23px;
@@ -745,12 +746,12 @@ footer span a:hover {
         justify-content: center;
       }
       form {
-        margin: 70px;
-        max-width: 70%;
+        margin: 10px;
+        width: 70%;
+        max-width: 100%;
         max-height: 80vh;
       }
 
-    
       @media (max-width: 512px) {
         .home .home-content .text-2 {
           font-size: 50px;
@@ -796,12 +797,7 @@ footer span a:hover {
           width: 100%;
           height: 70%;
         }
-        form {
-          margin: 50px;
-          max-width: 350px;
-          max-height: 80vh;
-        }
-      
+
         .box-soft-skills,
         .box-hard-skills,
         .box-hard-aprendiendo {
@@ -812,7 +808,12 @@ footer span a:hover {
           gap: 1px;
           margin: -30px 0 40px 0;
         }
-
+        form {
+          margin: 10px;
+          width: 80%;
+          max-width: 100%;
+          max-height: 80vh;
+        }
         img {
           height: 50px;
           width: 60px;
