@@ -23,7 +23,7 @@ h1 {
   margin-bottom: 8px;
 }
 h2 {
-  margin: auto;
+  padding-top: 100px;
 }
 p {
   padding-bottom: 4px;
@@ -35,6 +35,9 @@ p {
   height: 80px;
 }
 
+#hamburguer {
+  color: #111;
+}
 /* NAVBAR */
 
 .navbar {
@@ -44,12 +47,14 @@ p {
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
   z-index: 999;
-  background: #eb5e28;
+  background: #fff59e;
 }
 
 .navbar.sticky {
   padding: 15px 0;
-  background: #ccc5b9;
+  background: rgba(255, 245, 158, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .navbar .max-width {
@@ -65,12 +70,12 @@ p {
 }
 
 .navbar .logo a span {
-  color: #fffcf2;
+  color: blueviolet;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
-  color: #f06236;
+  color: blueviolet;
   transition: all 0.3s ease;
 }
 
@@ -90,17 +95,17 @@ p {
 }
 
 .navbar .menu li a:hover {
-  color: #fffcf2;
+  color: #fff59e;
 }
 
 .navbar.sticky .menu li a:hover {
-  color: #f06236;
+  color: #fff59e;
 }
 
 /* menu btn styling */
 
 .menu-btn {
-  color: #fff;
+  color: #fff59e;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -110,13 +115,13 @@ p {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #111;
+  background: #ffd369;
   right: 30px;
   bottom: 10px;
   text-align: center;
   line-height: 45px;
-  color: #f06236;
-  border: solid 1px orange;
+  color: #111;
+  border: solid 1px black;
   z-index: 9999;
   font-size: 30px;
   border-radius: 6px;
@@ -136,12 +141,13 @@ p {
 
 .home {
   display: flex;
-  background: url("images/laptop.jpg");
+  background: url("images/hero.png");
+  /* <a href="https://www.freepik.com/free-vector/cute-people-playing-laptop-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_22049524.htm#page=2&query=person%20study%20laptop%20cartoon&position=3&from_view=search&track=ais">Image by catalyststuff</a> on Freepik */
+  /* background: #140a00; */
   height: 100vh;
   color: #fff;
   min-height: 500px;
   background-size: cover;
-  background-attachment: fixed;
   font-family: "Rubik", sans-serif;
 }
 
@@ -166,14 +172,14 @@ p {
 }
 
 .home .home-content .text-3 span {
-  color: #eb5e28;
+  color: #ffd369;
   font-weight: 500;
 }
 
 .home .home-content a {
   display: inline-block;
-  background: #eb5e28;
-  color: #fffcf2;
+  background: #ffd369;
+  color: #111;
   font-size: 25px;
   padding: 12px 36px;
   border-radius: 8px;
@@ -207,11 +213,6 @@ p {
   justify-content: space-between;
 }
 
-/* all similar content styling code*/
-
-/* acerca de mi */
-/*section*/
-
 section .title {
   position: relative;
   text-align: center;
@@ -220,7 +221,7 @@ section .title {
   font-weight: 500;
   margin-bottom: 10px;
   padding-bottom: 60px;
-  padding-top: 10px;
+  padding-top: 60px;
 }
 
 #skills {
@@ -229,8 +230,8 @@ section .title {
 }
 
 .acerca {
-  background: #403d39;
-  color: #fffcf2;
+  background: #f8f8f8;
+  color: #111;
 }
 
 .acerca .acerca-content .left {
@@ -245,7 +246,7 @@ section .title {
 }
 
 .acerca .acerca-content .left img {
-  height: 300px;
+  height: 400px;
   width: 300px;
   object-fit: cover;
   border-radius: 6px;
@@ -262,26 +263,26 @@ section .title {
 }
 
 .acerca .acerca-content .right .text span {
-  color: #f06236;
+  color: #393e46;
 }
 
 .acerca .acerca-content .right p {
   text-align: justify;
-  color: #fffcf2;
+  color: #111;
   font-size: 20px;
 }
 
 .acerca .acerca-content .right a {
   display: inline-block;
-  background: #eb5e28;
-  color: #fffcf2;
-  font-size: 20px;
+  background: #ffd369;
+  color: #111;
+  font-size: 24px;
   font-weight: 500;
   padding: 10px 30px;
   border-radius: 6px;
   margin-top: 20px;
   margin-bottom: 60px;
-  border: 2px solid #eb5e28;
+  border: 2px solid #ffd369;
   transition: all 0.3s ease;
 }
 
@@ -311,10 +312,11 @@ section .title {
 /* Services */
 
 .services {
-  background: #ccc5b9;
-  color: #242522;
-  padding-top: 100px;
+  background: #a3a3a3;
+  color: #fff;
+  padding-top: 40px;
   padding-bottom: 20px;
+  min-height: 100vh;
 }
 
 .services .services-content {
@@ -324,7 +326,7 @@ section .title {
 
 .services .services-content .card {
   width: 350px;
-  background: black;
+  background: #393e46;
   height: 370px;
   text-align: center;
   border-radius: 6px;
@@ -344,16 +346,16 @@ section .title {
 }
 
 #services a {
-  color: #fff;
-  border: 1px solid;
-  background-color: #eb5e28;
+  background-color: #111;
   border-radius: 5px;
-  padding: 6px;
+  padding: 6px 12px;
+  color: #fff;
 }
 
 #services a:hover {
-  background-color: #be5130;
+  background-color: #f8cb63;
   transition: all 0.3s ease;
+  color: #111;
 }
 
 .services .services-content .card i {
@@ -377,41 +379,28 @@ section .title {
   width: 100%;
   height: 60%;
 }
-#michael {
-  background: #eb5e28;
-  color: #403d39;
-}
-#michael a {
-  background: #111;
-}
+
 /* SKILLS */
 
 .box-soft-skills,
 .box-hard-skills,
 .box-hard-aprendiendo {
   font-family: "Rubik", sans-serif;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  padding: 0;
-  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
   outline: none;
   border: none;
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.3s linear;
-  background: rgb(235, 94, 40);
-  background: rgb(235, 94, 40);
-  background: linear-gradient(45deg, #eb5e28 50%, #eeb3a1 0%);
-  padding: 10px 6px;
-  padding-bottom: 12px;
+
+  padding: 0px 6px 12px 0;
   display: grid;
   border-radius: 6px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 5px;
-}
-
-.box-hard-skills {
-  background: linear-gradient(45deg, #111 50%, #403d39 0%);
+  gap: 2px;
 }
 
 .box-soft-skills .box,
@@ -429,6 +418,13 @@ section .title {
 .box-hard-skills .box img,
 .box-hard-aprendiendo .box img {
   height: 60px;
+  transition: 0.3s ease-in-out;
+  transform: scale(1);
+}
+.box-soft-skills:hover img,
+.box-hard-skills:hover img,
+.box-hard-aprendiendo:hover img {
+  transform: scale(1.1);
 }
 
 .box-soft-skills .box p,
@@ -445,7 +441,7 @@ section .title {
   margin-top: 10px;
   display: inline-block;
   background: #403d39;
-  color: #fdfdfd;
+  color: #fff;
   font-size: 17px;
   border-radius: 5px;
   padding: 8px;
@@ -461,7 +457,7 @@ section .title {
 }
 
 .skills {
-  background: #fffcf2;
+  background: #fff;
 }
 
 /* -----------------   CONTACTO    ---------------*/
@@ -469,18 +465,22 @@ section .title {
 .formulario {
   font-family: "Roboto", sans-serif;
   background-color: #111;
-  background-position: 40px 40px 40px 40px;
+
   width: 100%;
-  min-height: 110vh;
+  min-height: 100vh;
   padding: 220px;
-  background-image: url(./images/paperairplanekid.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
+  background-image: url(./images/mail.jpg);
+  /* <a href="https://www.freepik.es/vector-gratis/ilustracion-concepto-mensaje-enviado_15742696.htm#query=throw%20plane%20mailbox&position=1&from_view=search&track=ais">Imagen de storyset</a> en Freepik */
   background-size: cover;
 }
 
 form {
-  background-color: #111;
+  background-color: rgba(
+    17,
+    17,
+    17,
+    0.8
+  ); /* Color de fondo con transparencia */
   margin-left: 150px;
   max-width: 33%;
   max-height: 100vh;
@@ -488,6 +488,7 @@ form {
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   text-align: center;
+  backdrop-filter: blur(10px);
 }
 .formulario input,
 textarea {
@@ -516,11 +517,11 @@ textarea {
   resize: none;
 }
 button {
-  background: #eb5e28;
-  color: #fff;
+  background: #ffd369;
+  color: #111;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-weight: 500;
+  font-size: 1.4rem;
   padding: 0.8em 0;
   border: none;
   border-radius: 0.5em;
@@ -537,7 +538,7 @@ footer {
 }
 
 footer span a {
-  color: #eb5e28;
+  color: #ffd369;
   text-decoration: none;
 }
 

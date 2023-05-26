@@ -4,8 +4,23 @@
 ---actualizar links
 ---hacer funcional el mail
 ---arreglar padding mobile
----agregar otra pagina con mas proyectos (agregar proyectos restantes)
+ver los demas proyectos mas pequenos en forma de grilla
 ---git ignore node module
+---optimizar imagenes
+---height image mobile projects
+---charlemos
+---bg segundo plano
+---diferentes colores de borde
+---eliminar html css
+---sin fonmdo las iconos
+---cambiar foto perfil
+---ubicar contacto h2
+---contact buscar mismo estilo de imagen tirando avioncito
+---eliminar animacion de aprendiendo...
+---navbar scroll transparent
 
 https://github.com/matiasherreradev/portfolio2023.git
 ghjdgfjdgfjdfjgdsfjdfj
+
+#0D0F12
+realtime colors

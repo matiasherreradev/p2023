@@ -27,7 +27,7 @@
         <li><a href="#contact" class="menu-btn">Contacto</a></li>
       </ul>
       <div class="menu-btn">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars" id="hamburguer"></i>
       </div>
     </div>
   </nav>
@@ -45,7 +45,6 @@
 
     </div>
   </section>
-  <!-- Acerca de mi-->
   <section class="acerca" id="acerca">
     <div class="max-width">
       <h2 class="title">ACERCA DE MI</h2>
@@ -64,6 +63,7 @@
       </div>
     </div>
   </section>
+  <!-- Acerca de mi-->
 
 
   <!-- Servicios-->
@@ -159,12 +159,12 @@
             </div>
           </div>
        
-          <div class="card " id="michael">
-            <img src="./images/michael.jfif" class="card-img-top" alt="imagen de tarjeta">
+          <div class="card " id="">
+            <img src="" class="card-img-top" alt="imagen de tarjeta">
             <div class="description-card">
-              <h1>Espera que aun hay mas!</h1>
+              <h1></h1>
               <p class="card-text">
-               Haz click para visitar el resto de mis proyectos <i class="fa-regular fa-face-smile"></i>
+             <i class="fa-regular fa-face-smile"></i>
                <div>
               <a href="#masproyectos" class="btn btn-primary" target="_blank">VISITAR MAS PROYECTOS </a>
             </div>
@@ -240,16 +240,9 @@
          
         </div>
 
-      <div class="box">
-        <img src="images/iconHtml.png" alt="html">
-        <h3>HTML 5</h3>
-       
-      </div>
+    
       
-      <div class="box">
-        <img src="images/iconCss.png" alt="Css">
-        <h3>CSS 5</h3>
-            </div>
+    
                  <div class="box">
         <img src="images/iconJS.png" alt="javascript">
         <h3>javascript</h3>
@@ -277,7 +270,7 @@
 
 <h2 class="title" #skills>Aprendiendo...</h2>
       
-      <div class="box-hard-aprendiendo  reveal">
+      <div class="box-hard-aprendiendo ">
   
 
   <div class="box">
@@ -303,7 +296,6 @@
   <!--  CONTACTO agregar placeholder, eliminar label y p -->
 <section id="contact">
   <div class="formulario" #contact>
-    <h2 class="title">CONTACTO</h2>
   
         <form name="contact" method="POST" data-netlify="true">
           
@@ -345,7 +337,7 @@
 
         var windowheight = window.innerHeight;
         var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
+        var revealpoint = 100;
 
         if(revealtop < windowheight - revealpoint){
           reveals[i].classList.add('active');
