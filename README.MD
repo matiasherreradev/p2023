@@ -18,6 +18,8 @@ ver los demas proyectos mas pequenos en forma de grilla
 ---contact buscar mismo estilo de imagen tirando avioncito
 ---eliminar animacion de aprendiendo...
 ---navbar scroll transparent
+---ARREGLAR MAIL
+---ARREGLAR BUTTON SOBRE FOOTER
 
 https://github.com/matiasherreradev/p2023.git
 ghjdgfjdgfjdfjgdsfjdfj
