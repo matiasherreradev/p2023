@@ -9,7 +9,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
+.hidden {
+  display: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -26,13 +28,12 @@ h2 {
   padding-top: 100px;
 }
 p {
-  padding-bottom: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-size: medium;
 }
 .description-card {
   color: white;
-  height: 80px;
+  height: 60px;
 }
 
 #hamburguer {
@@ -53,7 +54,7 @@ p {
 .navbar.sticky {
   padding: 15px 0;
   background: rgba(255, 245, 158, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -86,7 +87,7 @@ p {
 
 .navbar .menu li a {
   display: block;
-  color: #403d39;
+  color: #838888;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -329,17 +330,17 @@ section .title {
 
 .services .services-content .card {
   width: 350px;
-  background: #393e46;
-  height: 370px;
+  background: #242522;
+  height: 320px;
   text-align: center;
   border-radius: 6px;
-  padding: 10px 10px;
+  padding: 8px 8px 0px 8px;
 
   transition: all 0.3s ease;
 }
 
 .services .services-content .card:hover {
-  background: #242522;
+  background: #393e46;
   color: #fffcf2;
   transition: all 0.3s ease;
 }
@@ -380,7 +381,7 @@ section .title {
 
 .card-img-top {
   width: 100%;
-  height: 60%;
+  height: 55%;
 }
 
 /* SKILLS */
@@ -391,7 +392,6 @@ section .title {
   font-family: "Rubik", sans-serif;
   margin-bottom: 20px;
   padding: 10px;
-
   outline: none;
   border: none;
   text-decoration: none;
@@ -412,8 +412,8 @@ section .title {
   border-radius: 5px;
   background: #fdfdfd;
   text-align: center;
-  padding: 10px 20px;
-  margin: 5px 10px;
+  padding: 5px 10px;
+  margin: 2px 2px;
 }
 
 .box-soft-skills .box img,
@@ -486,7 +486,7 @@ form {
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   text-align: center;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 .formulario input,
 textarea {
@@ -635,6 +635,7 @@ footer span a:hover {
 
     .menu-btn i.active:before {
       content: "\f00d";
+      color: #838888;
     }
 
     .navbar .menu {
@@ -695,7 +696,7 @@ footer span a:hover {
       justify-content: center;
     }
     .services .serv-content .card {
-      width: calc(50% - 10px);
+      width: 70%;
       margin-bottom: 20px;
     }
 
@@ -734,7 +735,7 @@ footer span a:hover {
         justify-content: center;
       }
       .services .services-content .card {
-        width: 100%;
+        width: 70%;
         margin-bottom: 20px;
       }
 
@@ -768,23 +769,14 @@ footer span a:hover {
         .form-title {
           font-size: 1.8rem;
         }
-        .card {
-          width: 305px;
-          height: 250px;
-          margin: 5px 0;
-          padding: 2px;
-        }
-        .services .services-content .card {
-          width: 305px;
-          height: 305px;
-        }
+
         .services .services-content .card {
           width: 320px;
-          height: 305px;
-          background: #111;
+          height: 260px;
+          background: #393e46;
           text-align: center;
           border-radius: 6px;
-          padding: 10px 10px;
+          padding: 10px;
           transition: all 0.3s ease;
         }
 

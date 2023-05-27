@@ -1,46 +1,42 @@
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
-      $('.navbar').addClass("sticky");
+      $(".navbar").addClass("sticky");
     } else {
-      $('.navbar').removeClass("sticky");
+      $(".navbar").removeClass("sticky");
     }
-    if(this.scrollY > 500) {
-      $('.scroll-up-btn').addClass("show");
-    }else{
-      $('.scroll-up-btn').removeClass("show");
-
+    if (this.scrollY > 500) {
+      $(".scroll-up-btn").addClass("show");
+    } else {
+      $(".scroll-up-btn").removeClass("show");
     }
   });
 
-/* slide up script */
+  /* slide up script */
 
-$('.scroll-up-btn').click(function(){
-$('html').animate({scrollTop: 0});
-});
+  $(".scroll-up-btn").click(function () {
+    $("html").animate({ scrollTop: 0 });
+  });
 
   //toggle menu/navbar script
-  $('.menu-btn').click(function () {
-    $('.navbar .menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
-  })
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
 });
-
 
 // typing animation //
 
-var typed = new Typed (".typing", {
-  strings: ["Developer","Estudiante","Freelancer"],
+var typed = new Typed(".typing", {
+  strings: ["Developer", "Autodidacta", "Freelancer"],
   typeSpeed: 100,
   backSpeed: 60,
-  loop: true
+  loop: true,
 });
 
-
-
-var typed = new Typed (".typing-2", {
-  strings: ["Developer","Estudiante","Freelancer"],
+var typed = new Typed(".typing-2", {
+  strings: ["Developer", "Autodidacta", "Freelancer"],
   typeSpeed: 100,
   backSpeed: 60,
-  loop: true
+  loop: true,
 });
