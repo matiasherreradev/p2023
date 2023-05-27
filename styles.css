@@ -3,6 +3,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content,
+.home-right {
+  width: 45%;
+}
+.max-width-home {
+  display: flex;
+
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: auto;
+}
+
+/* Asegurarse de que las imágenes se ajusten al contenedor */
+.home-right img {
+  width: 70%;
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -142,9 +167,9 @@ p {
 
 .home {
   display: flex;
-  background: url("images/hero.png");
+  /* background: url("images/hero.png");
   /* <a href="https://www.freepik.com/free-vector/cute-people-playing-laptop-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_22049524.htm#page=2&query=person%20study%20laptop%20cartoon&position=3&from_view=search&track=ais">Image by catalyststuff</a> on Freepik */
-  /* background: #140a00; */
+  background: #140a00;
   height: 100vh;
   color: #fff;
   min-height: 500px;
