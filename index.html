@@ -75,10 +75,10 @@
       </div>
     </div>
   </section>
-  <!-- Acerca de mi-->
 
 
-  <!-- Servicios-->
+
+  <!-- Proyectos-->
 
   <section class="services " id="services">
     <div class="max-width">
@@ -165,9 +165,7 @@
               </div>
             </div> 
 
-          <div class="card" id="masproyectos">
-                                <a href="#masproyectos" class="btn btn-primary" target="_blank">CARGAR MAS PROYECTOS </a>
-            </div>
+         
                      
           
 
@@ -199,7 +197,7 @@
           </div> 
 
 
-  <div class="card hidden">
+         <div class="card hidden">
             <img src="./images/crud.png" class="card-img-top" alt="portfolio">
             <div class="description-card">
               <h1>CRUD</h1>
@@ -212,13 +210,19 @@
             </div>
           </div> 
 
+
+          
         </div>
       </div>
     </div>
-      
-      
-    </section>
     
+    
+  </section>
+  <div class="boton">
+    <div id="masproyectos">
+      <a href="#masproyectos" class="boton-proyectos" target="_blank">CARGAR MAS PROYECTOS </a>
+    </div>
+  </div>
   <!-- SKILLS-->
   
   <section class="skills " id="skills">
@@ -405,9 +409,13 @@
         tarjetasOcultas.forEach(function(tarjeta) {
           tarjeta.classList.remove("hidden");
         });
+  
+        enlaceMasProyectos.textContent = "PROYECTOS CARGADOS";
+        enlaceMasProyectos.disabled = true;
       });
     });
   </script>
+  
   </body>
 
 </html>

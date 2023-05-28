@@ -86,7 +86,7 @@ p {
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
   z-index: 999;
-  background: #fff59e;
+  background: #ffd369;
 }
 
 .navbar.sticky {
@@ -144,7 +144,7 @@ p {
 /* menu btn styling */
 
 .menu-btn {
-  color: #fff59e;
+  color: #ffd369;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -262,18 +262,14 @@ section .title {
   padding-top: 60px;
 }
 
-#skills {
-  color: black;
-  margin-top: 50px;
-}
 #contact {
   color: #838888;
   background: #111;
 }
 
 .acerca {
-  background: #f8f8f8;
-  color: #111;
+  background: #242522;
+  color: #fff;
 }
 
 .acerca .acerca-content .left {
@@ -305,12 +301,12 @@ section .title {
 }
 
 .acerca .acerca-content .right .text span {
-  color: #393e46;
+  color: #ffd369;
 }
 
 .acerca .acerca-content .right p {
   text-align: justify;
-  color: #111;
+  color: #a3a3a3;
   font-size: 20px;
 }
 
@@ -358,12 +354,12 @@ section .title {
   color: #fff;
   padding-top: 40px;
   padding-bottom: 20px;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .services .services-content {
-  height: 100%;
-  margin: -32px 12px 8px 14px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .services .services-content .card {
@@ -421,6 +417,25 @@ section .title {
   width: 100%;
   height: 55%;
 }
+.boton {
+  background: #a3a3a3;
+  padding-bottom: 1em;
+}
+.boton-proyectos {
+  color: #111;
+  background: #ffd369;
+  font-family: "Rubik", sans-serif;
+  padding: 0.5rem 5rem;
+  font-size: 1.5em;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
 
 /* SKILLS */
 
@@ -428,15 +443,9 @@ section .title {
 .box-hard-skills,
 .box-hard-aprendiendo {
   font-family: "Rubik", sans-serif;
-  margin-bottom: 20px;
-  padding: 10px;
-  outline: none;
-  border: none;
-  text-decoration: none;
+  padding: 20px;
   text-transform: capitalize;
   transition: 0.3s linear;
-
-  padding: 0px 6px 12px 0;
   display: grid;
   border-radius: 6px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -450,6 +459,7 @@ section .title {
   border-radius: 5px;
   background: #fdfdfd;
   text-align: center;
+  color: #111;
   padding: 5px 10px;
   margin: 2px 2px;
 }
@@ -497,7 +507,10 @@ section .title {
 }
 
 .skills {
-  background: #fff;
+  background: #393e46;
+}
+#skills {
+  color: #fff;
 }
 
 /* -----------------   CONTACTO    ---------------*/
@@ -521,7 +534,7 @@ section .title {
 
 .field label {
   display: block;
-  font-size: 12px;
+  font-size: 16px;
   color: #777;
 }
 
@@ -536,7 +549,7 @@ input[type="submit"] {
   display: block;
   padding: 6px 30px;
   font-size: 24px;
-  background-color: #fff59e;
+  background-color: #ffd369;
   color: #111;
   border-radius: 6px;
 }
@@ -555,7 +568,8 @@ form {
 .formulario input,
 textarea {
   font-weight: 500;
-  color: #111;
+  color: #fff;
+  font-size: 1.2em;
 }
 form {
   margin-top: 1.5em;
