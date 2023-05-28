@@ -9,6 +9,12 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('q31R-bQ2TFKBHBdGL')
+</script>
 </head>
 
 <body>
@@ -39,7 +45,7 @@
       <div class="home-content">
         <div class="text-1">Hola, mi nombre es</div>
         <div class="text-2">Matias Herrera</div>
-        <div class="text-3">Soy <span class="typing"></span></div>
+        <div class="text-3"><span class="typing"></span></div>
         <a href="#contact">Contactame</a>
       </div>
       <div class="home-right">
@@ -325,18 +331,29 @@
 
   </section>
 
-  <!--  CONTACTO agregar placeholder, eliminar label y p -->
+
   <section id="contact">
     <h2 class="title" id="contact">CONTACTO</h2>
     <div class="formulario">
-      <form autocomplete="off" netlify action="/gracias-por-contactar">
-        <!-- Contenido del formulario -->
-    
-        <input type="text" name="name" placeholder="Escribe tu nombre" /><br>
-        <input type="email" name="email" placeholder="Deja tu mail" /><br>
-        <textarea name="message" placeholder="Dejame un mensaje"></textarea><br>
-        <button type="submit">Enviar</button>
+      <form id="form">
+        <div class="field">
+          <label for="from_name">Nombre</label>
+          <input type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message">
+        </div>
+        <div class="field">
+          <label for="email_id">Deja tu mail!</label>
+          <input type="text" name="email_id" id="email_id">
+        </div>
+      
+      
+        <input type="submit" id="button" value="Send Email" >
       </form>
+
+
     </div>
   </section>
   

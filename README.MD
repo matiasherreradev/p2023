@@ -3,7 +3,5 @@
 ---actualizar links (absolutamente todos)
 ---optimizar imagenes
 ---cambiar foto perfil
----ARREGLAR MAIL
----areglar hero
+
 https://github.com/matiasherreradev/p2023.git
-formspree

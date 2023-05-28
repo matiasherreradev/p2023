@@ -14,17 +14,30 @@
 .home-right {
   width: 45%;
 }
-.max-width-home {
-  display: flex;
-
-  max-width: 1300px;
-  padding: 0 50px;
-  margin: auto;
+.home-content {
+  width: 60%;
+}
+.home-right {
+  position: relative;
 }
 
-/* Asegurarse de que las imágenes se ajusten al contenedor */
 .home-right img {
-  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.max-width-home {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  padding: 0 50px;
+  gap: 20rem;
+}
+
+.home-right img {
+  width: 160%;
   height: auto;
 }
 
@@ -502,12 +515,38 @@ section .title {
   align-items: center;
 }
 
+.field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 24px;
+  background-color: #fff59e;
+  color: #111;
+  border-radius: 6px;
+}
+
 form {
   background-color: rgba(17, 17, 17, 0.8);
   margin-left: 150px;
   max-width: 33%;
   max-height: 100vh;
-  padding: 6em 2.2em;
+  padding: 1em 2.2em;
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   text-align: center;
@@ -516,7 +555,7 @@ form {
 .formulario input,
 textarea {
   font-weight: 500;
-  color: #fff;
+  color: #111;
 }
 form {
   margin-top: 1.5em;
@@ -610,6 +649,12 @@ footer span a:hover {
     .max-width {
       padding: 0 50px;
     }
+    .max-width-home {
+      display: flex;
+      justify-content: space-between;
+
+      gap: 5rem;
+    }
 
     .card {
       margin: 10px 0px;
@@ -701,6 +746,18 @@ footer span a:hover {
       font-size: 23px;
       padding: 10px 30px;
     }
+    .max-width-home {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .home-right img {
+      width: 130%;
+      height: auto;
+      left: 70%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
     .about .about-content .column {
       width: 100%;
@@ -728,6 +785,12 @@ footer span a:hover {
     .acerca-content {
       flex-direction: column;
     }
+    .home-right img {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
     form {
       margin: 10px;
       width: 70%;
@@ -754,6 +817,26 @@ footer span a:hover {
       .home .home-content a {
         font-size: 20px;
       }
+
+      .max-width-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .home-content {
+        top: 20%;
+      }
+      .home-right img {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        order: 2;
+        margin-top: 20px;
+      }
+      .max-width-home {
+        gap: 9em;
+      }
+
       .services-content.reveal {
         display: flex;
         flex-wrap: wrap;
@@ -793,6 +876,11 @@ footer span a:hover {
         }
         .form-title {
           font-size: 1.8rem;
+        }
+        .acerca .acerca-content .right p {
+          text-align: start;
+          color: #111;
+          font-size: 20px;
         }
 
         .services .services-content .card {
