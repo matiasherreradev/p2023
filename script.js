@@ -52,11 +52,11 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
-      btn.value = "Send Email";
+      btn.value = "Enviar Mail";
       alert("Mensaje enviado!");
     },
     (err) => {
-      btn.value = "Send Email";
+      btn.value = "Enviar Mail";
       alert(JSON.stringify(err));
     }
   );

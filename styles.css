@@ -26,6 +26,7 @@
   top: 50%;
   left: 90%;
   transform: translate(-50%, -50%);
+  border-radius: 6px;
 }
 
 .max-width-home {
@@ -75,7 +76,7 @@ p {
 }
 
 #hamburguer {
-  color: #111;
+  color: #838888;
 }
 /* NAVBAR */
 
@@ -86,14 +87,15 @@ p {
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
   z-index: 999;
-  background: #ffd369;
+  background: transparent;
+  /* background: #ffd369; */
 }
 
 .navbar.sticky {
   padding: 15px 0;
-  background: rgba(255, 245, 158, 0.8);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .max-width {
@@ -104,17 +106,17 @@ p {
 
 .navbar .logo a {
   font-size: 35px;
-  color: #403d39;
+  color: #a3a3a3;
   font-weight: 600;
 }
 
 .navbar .logo a span {
-  color: blueviolet;
+  color: #ffd369;
   transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
-  color: blueviolet;
+  color: #ffd369;
   transition: all 0.3s ease;
 }
 
@@ -125,7 +127,7 @@ p {
 
 .navbar .menu li a {
   display: block;
-  color: #838888;
+  color: #a3a3a3;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -184,7 +186,7 @@ p {
   /* <a href="https://www.freepik.com/free-vector/cute-people-playing-laptop-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_22049524.htm#page=2&query=person%20study%20laptop%20cartoon&position=3&from_view=search&track=ais">Image by catalyststuff</a> on Freepik */
   background: #140a00;
   height: 100vh;
-  color: #fff;
+  color: #a3a3a3;
   min-height: 500px;
   background-size: cover;
   font-family: "Rubik", sans-serif;
@@ -257,7 +259,6 @@ section .title {
   font-family: "Rubik", sans-serif;
   font-size: 32px;
   font-weight: 500;
-  margin-bottom: 10px;
   padding-bottom: 60px;
   padding-top: 60px;
 }
@@ -547,7 +548,7 @@ section .title {
 
 input[type="submit"] {
   display: block;
-  padding: 6px 30px;
+  padding: 15px 30px;
   font-size: 24px;
   background-color: #ffd369;
   color: #111;
@@ -563,12 +564,12 @@ form {
   border-radius: 10px;
   box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 .formulario input,
 textarea {
   font-weight: 500;
-  color: #fff;
+  color: #a3a3a3;
   font-size: 1.2em;
 }
 form {
@@ -893,7 +894,7 @@ footer span a:hover {
         }
         .acerca .acerca-content .right p {
           text-align: start;
-          color: #111;
+          color: #a3a3a3;
           font-size: 20px;
         }
 
