@@ -136,11 +136,13 @@ p {
 }
 
 .navbar .menu li a:hover {
-  color: blueviolet;
+  color: #ffd369;
+  transition: all 0.3s ease;
 }
 
 .navbar.sticky .menu li a:hover {
-  color: blueviolet;
+  color: #ffd369;
+  transition: all 0.3s ease;
 }
 
 /* menu btn styling */
@@ -230,8 +232,8 @@ p {
 }
 
 .home .home-content a:hover {
-  color: #fffcf2;
-  background-color: #be5130;
+  color: #a3a3a3;
+  background-color: #f8cb63;
   transition: all 0.3s ease;
 }
 
@@ -285,8 +287,8 @@ section .title {
 }
 
 .acerca .acerca-content .left img {
-  height: 400px;
-  width: 300px;
+  height: 300px;
+  width: auto;
   object-fit: cover;
   border-radius: 6px;
 }
@@ -296,7 +298,7 @@ section .title {
 }
 
 .acerca .acerca-content .right .text {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -326,8 +328,8 @@ section .title {
 }
 
 .acerca .acerca-content .right a:hover {
-  color: #242522;
-  background: #ccc5b9;
+  color: #a3a3a3;
+  background: #ffd369;
 }
 
 .acerca .acerca-content .column {
@@ -884,6 +886,10 @@ footer span a:hover {
         .home .home-content .text-3 {
           font-size: 24px;
         }
+        .home-right img {
+          order: 2;
+          margin-top: 0px;
+        }
 
         .about .about-content .right .text,
         .skills .skills-content .left .text {
@@ -926,7 +932,7 @@ footer span a:hover {
           font-size: 12px;
           grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
           gap: 1px;
-          margin: -30px 0 40px 0;
+          margin: -30px 0px 0px 0px;
         }
         form {
           margin: 10px;
