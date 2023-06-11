@@ -88,7 +88,6 @@ p {
   transition: all 0.3s ease;
   z-index: 999;
   background: transparent;
-  /* background: #ffd369; */
 }
 
 .navbar.sticky {
@@ -127,7 +126,7 @@ p {
 
 .navbar .menu li a {
   display: block;
-  color: #a3a3a3;
+  color: #ffd369;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -135,7 +134,7 @@ p {
   display: block;
 }
 
-.navbar .menu li a:hover {
+.navbar .menu li a:active {
   color: #ffd369;
   transition: all 0.3s ease;
 }
@@ -184,7 +183,6 @@ p {
 
 .home {
   display: flex;
-  /* background: url("images/hero.png");
   /* <a href="https://www.freepik.com/free-vector/cute-people-playing-laptop-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_22049524.htm#page=2&query=person%20study%20laptop%20cartoon&position=3&from_view=search&track=ais">Image by catalyststuff</a> on Freepik */
   background: #140a00;
   height: 100vh;
@@ -524,8 +522,8 @@ section .title {
   width: 100%;
   height: 68vh;
   background-size: cover;
-  background-image: url(./images/plane.jpg);
-  /* <a href="https://www.freepik.es/foto-gratis/avion-papel-amarillo_974127.htm#page=2&query=plane%20vector%20mail&position=5&from_view=search&track=ais">Imagen de dashu83</a> en Freepik */
+  background-image: url(./images/mailyellow.jpg);
+  /* <a href="https://www.freepik.es/foto-gratis/mensajes-correo-electronico-tecnologia-conexion-enlace-placa-circuito-red_1198385.htm#query=background%20mail%20yellow%20black&position=0&from_view=search&track=ais">Imagen de natanaelginting</a> en Freepik */
   display: flex;
   justify-content: center;
   align-items: center;
