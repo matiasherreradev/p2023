@@ -140,7 +140,7 @@ p {
 }
 
 .navbar.sticky .menu li a:hover {
-  color: #ffd369;
+  color: #fff;
   transition: all 0.3s ease;
 }
 
